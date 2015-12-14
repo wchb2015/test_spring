@@ -1,10 +1,14 @@
-package com.lvmama.model;
+package com.spring.annotation;
+
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
 /**
  * Created by wangchongbei on 15-12-14.
  */
+
+@Component
 public class User {
     private String name;
     private Date birthDate;

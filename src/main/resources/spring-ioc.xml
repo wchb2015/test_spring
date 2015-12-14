@@ -8,7 +8,7 @@
     <bean id="sysLogDao" class="com.lvmama.dao.SysLogDao"/>
     <bean id="sysLogService" class="com.lvmama.service.impl.SysLogServiceImpl">
         <!--<property name="sysLogDao" ref="sysLogDao"/>
-          上面配置了default-autowire="byName" 不用再去配置property属性-->
+          上面配置了default-autowire="byName"（使用spring-autowiring） 就不用再去配置property属性-->
     </bean>
 
 

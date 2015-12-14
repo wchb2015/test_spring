@@ -1,6 +1,6 @@
-package com.lvmama.service;
+package com.spring.annotation;
 
-import com.lvmama.model.User;
+import com.spring.annotation.User;
 
 /**
  * Created by wangchongbei on 15-12-14.
