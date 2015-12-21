@@ -18,7 +18,8 @@ public class TestServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1. 从 application 域对象中得到 IOC 容器的引用
         ServletContext servletContext = getServletContext();
-        ApplicationContext ctx = (ApplicationContext) servletContext.getAttribute("ApplicationContext");
+//        ApplicationContext ctx = (ApplicationContext) servletContext.getAttribute("ApplicationContext");
+        ApplicationContext ctx = (ApplicationContext) servletContext.getAttribute("org.springframework.web.context.WebApplicationContext.ROOT");
 
         //2. 从 IOC 容器中得到需要的 bean
         QuartzJob1 job1 = ctx.getBean(QuartzJob1.class);
