@@ -7,7 +7,7 @@
     <groupId>test</groupId>
     <artifactId>spring</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>test_Spring</name>
+    <name>test_spring</name>
     <packaging>war</packaging>
 
     <dependencies>
@@ -56,7 +56,7 @@
         </dependency>
         <!--common end-->
 
-        <!--SHH start-->
+        <!--SSM start-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -99,7 +99,7 @@
             <version>1.8.7</version>
         </dependency>
 
-        <!--SHH end-->
+        <!--SSM end-->
 
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
@@ -112,4 +112,19 @@
     <properties>
         <spring.version>4.2.0.RELEASE</spring.version>
     </properties>
+
+    <!-- Build Settings -->
+    <!--http://maven.apache.org/pom.html#Build_Settings-->
+    <build>
+        <resources>
+            <resource>
+                <!--directory: 资源所在的位置-->
+                <directory>src/main/resources</directory>
+                <!--filtering: 是否替换资源中的属性placehold-->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+
 </project>
