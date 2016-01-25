@@ -45,3 +45,16 @@ This is my Spring test project.
         <param-value>classpath:spring-quartz.xml</param-value>
     </context-param>
    ```
+   
+* Spring事务管理
+```sql
+CREATE TABLE  account_t (
+ id INT(11) NOT NULL AUTO_INCREMENT,
+ name VARCHAR(20) NOT NULL,
+ money DOUBLE DEFAULT NULL,
+ PRIMARY KEY(id)
+)ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+INSERT INTO account_t(name,money) VALUE('aaa','1000');
+INSERT INTO account_t(name,money) VALUE('bbb','1000');
+INSERT INTO account_t(name,money) VALUE('ccc','1000');
+```   
