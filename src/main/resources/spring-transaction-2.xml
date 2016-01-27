@@ -34,11 +34,11 @@ http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <bean id="accountDao" class="com.lvmama.transaction.AccountDaoImpl">
+    <bean id="accountDao" class="com.spring.transaction.AccountDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
-    <bean id="accountService" class="com.lvmama.transaction.AccountServiceImpl">
+    <bean id="accountService" class="com.spring.transaction.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
 
@@ -58,7 +58,7 @@ http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
     <aop:config>
         <!--配置切入点：first *:任意返回值-->
         <aop:pointcut id="pointcut1"
-                      expression="execution(* com.lvmama.transaction.AccountService+.*(..))"></aop:pointcut>
+                      expression="execution(* com.spring.transaction.AccountService+.*(..))"></aop:pointcut>
         <!--配置切面-->
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut1"/>
     </aop:config>

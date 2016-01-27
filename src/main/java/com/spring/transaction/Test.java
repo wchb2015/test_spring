@@ -1,4 +1,4 @@
-package com.lvmama.transaction;
+package com.spring.transaction;
 
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;

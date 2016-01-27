@@ -1,4 +1,4 @@
-package com.lvmama.transaction;
+package com.spring.transaction;
 
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,4 +1,4 @@
-package com.lvmama.transaction;
+package com.spring.transaction;
 
 /**
  * Created by wchb7 on 16-1-24.

@@ -36,11 +36,11 @@ http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <bean id="accountDao" class="com.lvmama.transaction.AccountDaoImpl">
+    <bean id="accountDao" class="com.spring.transaction.AccountDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
-    <bean id="accountService" class="com.lvmama.transaction.AccountServiceImpl">
+    <bean id="accountService" class="com.spring.transaction.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
 
