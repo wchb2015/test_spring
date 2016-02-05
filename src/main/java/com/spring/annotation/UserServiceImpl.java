@@ -36,7 +36,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private BeanInterface beanInterface;
 
-
     public void saveUser(User user) {
         System.out.println("-------------UserServiceImpl SaveUser()!");
         userDao.saveUser(user);

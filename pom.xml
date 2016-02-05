@@ -62,7 +62,7 @@
         </dependency>
         <!--common end-->
 
-        <!--SSM start-->
+        <!--Spring start-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -77,13 +77,19 @@
 
         <dependency>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
+            <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
@@ -113,16 +119,22 @@
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
+            <artifactId>spring-jms</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
-        <!--SSM end-->
+        <!--Spring end-->
 
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
             <version>2.1.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-core</artifactId>
+            <version>5.7.0</version>
         </dependency>
 
     </dependencies>

@@ -16,7 +16,6 @@ public class TestAware extends UnitTestBase {
         super("spring-aware.xml");
     }
 
-
     @Test
     public void testAware() {
         MoocApplicationContext moocApplicationContext = super.getBean("moocApplicationContext");

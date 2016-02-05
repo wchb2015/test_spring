@@ -17,9 +17,12 @@ import java.util.Arrays;
 public class UnitTestBase {
 
     private static final Log LOG = LogFactory.getLog(UnitTestBase.class);
+
     private ClassPathXmlApplicationContext context;
 
     private String springXmlPath;
+
+    private String lineSeparator = System.getProperty("line.separator");
 
     public UnitTestBase() {
     }
@@ -37,7 +40,7 @@ public class UnitTestBase {
             context = new ClassPathXmlApplicationContext(springXmlPath.split("[,\\s]+"));
             context.start();
 
-            LOG.info("-----------BeanDefinitionCount:" + context.getBeanDefinitionCount() + "   BeanDefinitionNames" +
+            LOG.info(lineSeparator + "-----------BeanDefinitionCount:" + context.getBeanDefinitionCount() + "   BeanDefinitionNames" +
                     "-------------" + Arrays.asList(context.getBeanDefinitionNames()));
 
         } catch (BeansException e) {

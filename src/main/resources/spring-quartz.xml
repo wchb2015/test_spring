@@ -8,7 +8,6 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <bean id="quartzJob2" class="com.lvmama.job.QuartzJob2"/>
     <!--工作bean End-->
 
-
     <bean name="startQuertz" lazy-init="false" autowire="no"
           class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="triggers">
@@ -18,7 +17,6 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
             </list>
         </property>
     </bean>
-
 
     <!--CronTriggerFactoryBean Start  主要配置了时间表达式-->
     <bean id="myJobTrigger1"
