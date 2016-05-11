@@ -2,18 +2,18 @@
 
 * User 注解配置　Log  xml配置
 
-* bean的配置项
-* bean的作用域
+* Bean的配置项
+* Bean的作用域
     singleton(Default)/prototype...
-* bean的生命周期
+* Bean的生命周期
    1. 定义
    2. 初始化
    3. 使用
    4. 销毁
-* bean的自动装配
+* Bean的自动装配
 * Resources&&ResourcesLoader
 
-* bean管理的注解实现
+* Bean管理的注解实现
 ```java
 @Component@Repository@Controller@Service
 @Autowired
@@ -54,3 +54,5 @@ INSERT INTO account_t(name,money) VALUE('aaa','1000');
 INSERT INTO account_t(name,money) VALUE('bbb','1000');
 INSERT INTO account_t(name,money) VALUE('ccc','1000');
 ```
+
+* 注解学习(案例:注解反射生成SQL语句)
