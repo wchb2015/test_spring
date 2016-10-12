@@ -30,14 +30,13 @@ public class UnitTestBase {
     @Before
     public void before() {
         if (StringUtils.isEmpty(springXmlPath)) {
-            springXmlPath = "classpath*:spring-*.xml";
+            springXmlPath = "application-context.xml";
         }
         try {
             context = new ClassPathXmlApplicationContext(springXmlPath.split("[,\\s]+"));
             context.start();
-
-            LOG.info(lineSeparator + "-----------BeanDefinitionCount:" + context.getBeanDefinitionCount() + "   BeanDefinitionNames" +
-                    "-------------" + Arrays.asList(context.getBeanDefinitionNames()));
+            LOG.error(lineSeparator + "######  BeanDefinitionCount:" + context.getBeanDefinitionCount() +
+                    lineSeparator + "######  BeanDefinitionNames:" + Arrays.asList(context.getBeanDefinitionNames()));
 
         } catch (BeansException e) {
             e.printStackTrace();
@@ -48,7 +47,6 @@ public class UnitTestBase {
     public void after() {
         context.destroy();
     }
-
 
     protected <T extends Object> T getBean(String beanId) {
         try {

@@ -9,7 +9,7 @@ public class SysLogServiceImpl implements SysLogService {
     private SysLogDao sysLogDao;
 
     public void saveSysLog(SysLog log) {
-        System.out.println("--------SysLogServiceImpl saveSysLog()!!!!");
+        System.out.println("###### SysLogServiceImpl saveSysLog()!!!!");
         sysLogDao.saveSysLogDao(log);
     }
 
