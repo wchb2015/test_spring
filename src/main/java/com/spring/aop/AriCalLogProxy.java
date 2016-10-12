@@ -5,9 +5,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
-/**
- * Created by wangchongbei on 16-1-27.
- */
 public class AriCalLogProxy {
 
     private ArithmeticCalculator target;//要代理的对象
@@ -19,7 +16,7 @@ public class AriCalLogProxy {
 
     //返回代理对象
     public ArithmeticCalculator getLogProxy() {
-        
+
         ArithmeticCalculator proxy;
 
         ClassLoader loader = target.getClass().getClassLoader();

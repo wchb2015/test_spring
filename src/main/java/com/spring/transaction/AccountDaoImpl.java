@@ -2,9 +2,6 @@ package com.spring.transaction;
 
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
-/**
- * Created by wchb7 on 16-1-24.
- */
 public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {
 
     public void outMoney(String out, Double money) {

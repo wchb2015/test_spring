@@ -1,17 +1,11 @@
 package com.spring.resource;
 
-/**
- * Created by wangchongbei on 15-12-14.
- */
-
-import java.io.IOException;
-
-import org.junit.Test;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.io.Resource;
 
+import java.io.IOException;
 
 public class MoocResource implements ApplicationContextAware {
 

@@ -1,8 +1,5 @@
 package com.spring.aop;
 
-/**
- * Created by wangchongbei on 16-1-27.
- */
 public interface ArithmeticCalculator {
 
     int add(int i, int j);

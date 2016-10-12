@@ -10,6 +10,10 @@
     <name>test_spring</name>
     <packaging>war</packaging>
 
+    <properties>
+        <spring.version>4.2.0.RELEASE</spring.version>
+    </properties>
+
     <dependencies>
 
         <!--common start-->
@@ -138,10 +142,6 @@
         </dependency>
 
     </dependencies>
-
-    <properties>
-        <spring.version>4.2.0.RELEASE</spring.version>
-    </properties>
 
     <!-- Build Settings -->
     <!--http://maven.apache.org/pom.html#Build_Settings-->

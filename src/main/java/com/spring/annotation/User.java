@@ -4,10 +4,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-/**
- * Created by wangchongbei on 15-12-14.
- */
-
 @Component
 public class User {
     private String name;

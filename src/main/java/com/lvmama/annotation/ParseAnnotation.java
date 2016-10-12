@@ -3,9 +3,6 @@ package com.lvmama.annotation;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-/**
- * Created by wchb7 on 16-5-11.
- */
 public class ParseAnnotation {
 
     public static void main(String[] args) throws Exception {

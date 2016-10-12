@@ -3,9 +3,6 @@ package com.lvmama.annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * Created by wchb7 on 16-5-11.
- */
 public class ReturnQuery {
 
     public static String query(Object o) {

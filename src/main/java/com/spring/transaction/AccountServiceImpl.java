@@ -2,10 +2,6 @@ package com.spring.transaction;
 
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by wchb7 on 16-1-24.
- */
-
 @Transactional()
 public class AccountServiceImpl implements AccountService {
     private AccountDao accountDao;

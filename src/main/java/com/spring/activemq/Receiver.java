@@ -1,19 +1,11 @@
 package com.spring.activemq;
 
 
-import javax.jms.Connection;
-import javax.jms.ConnectionFactory;
-import javax.jms.Destination;
-import javax.jms.MessageConsumer;
-import javax.jms.Session;
-import javax.jms.TextMessage;
-
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
-/**
- * Created by wangchongbei on 16-2-3.
- */
+import javax.jms.*;
+
 public class Receiver {
     public static void main(String[] args) {
 

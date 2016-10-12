@@ -1,9 +1,5 @@
 package com.lvmama.annotation;
 
-/**
- * Created by wchb7 on 16-5-11.
- */
-
 @Table("user")
 public class User {
 

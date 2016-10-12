@@ -6,9 +6,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 
-/**
- * Created by wangchongbei on 16-1-25.
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:spring-transaction-3.xml")
 public class Test {

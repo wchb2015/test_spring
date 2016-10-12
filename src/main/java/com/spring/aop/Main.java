@@ -4,9 +4,6 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Created by wangchongbei on 16-1-27.
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -25,7 +22,7 @@ public class Main {
     }
 
     @Test
-    public void aopTest(){
+    public void aopTest() {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-aop.xml");
 

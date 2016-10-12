@@ -6,9 +6,6 @@ import org.springframework.context.ApplicationContextAware;
 
 import java.util.Arrays;
 
-/**
- * Created by wangchongbei on 15-12-14.
- */
 public class MoocApplicationContext implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;

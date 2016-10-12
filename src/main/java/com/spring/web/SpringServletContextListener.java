@@ -10,9 +10,6 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import java.util.Arrays;
 
-/**
- * Created by wangchongbei on 15-12-16.
- */
 public class SpringServletContextListener implements ServletContextListener {
     private static final Log LOG = LogFactory.getLog(SpringServletContextListener.class);
 

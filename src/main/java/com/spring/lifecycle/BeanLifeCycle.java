@@ -5,7 +5,6 @@ import org.springframework.beans.factory.InitializingBean;
 
 public class BeanLifeCycle implements InitializingBean, DisposableBean {
 
-
     public void start() {
         System.out.println("---------BeanLifeCycle start");
     }

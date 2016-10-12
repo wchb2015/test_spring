@@ -2,9 +2,6 @@ package com.lvmama.model;
 
 import java.util.Date;
 
-/**
- * Created by wangchongbei on 15-12-14.
- */
 public class SysLog {
     private Date date;
     private String content;

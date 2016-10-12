@@ -1,10 +1,5 @@
 package com.lvmama.annotation;
 
-import com.sun.org.glassfish.gmbal.*;
-
-/**
- * Created by wchb7 on 16-5-11.
- */
 @Description(desc = "desc1", author = "author1")
 public class Person {
 

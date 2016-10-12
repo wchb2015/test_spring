@@ -2,12 +2,7 @@ package com.lvmama.annotation;
 
 import java.lang.annotation.*;
 
-/**
- * Created by wchb7 on 16-5-11.
- */
-
-
-@Target({ElementType.METHOD, ElementType.TYPE,ElementType.FIELD})
+@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 @Documented

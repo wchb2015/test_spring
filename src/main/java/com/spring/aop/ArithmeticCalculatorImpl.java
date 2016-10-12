@@ -2,10 +2,6 @@ package com.spring.aop;
 
 import org.springframework.stereotype.Component;
 
-/**
- * Created by wangchongbei on 16-1-27.
- */
-
 @Component("arithmeticCalculator")
 public class ArithmeticCalculatorImpl implements ArithmeticCalculator {
 

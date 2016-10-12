@@ -1,9 +1,5 @@
 package com.spring.aop;
 
-/**
- * Created by wangchongbei on 16-1-27.
- */
-
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

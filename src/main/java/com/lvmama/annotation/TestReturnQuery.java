@@ -1,8 +1,6 @@
 package com.lvmama.annotation;
 
-/**
- * Created by wchb7 on 16-5-11.
- */
+
 public class TestReturnQuery {
 
     public static void main(String[] args) {

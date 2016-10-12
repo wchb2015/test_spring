@@ -4,9 +4,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
 
-/**
- * Created by wangchongbei on 16-2-1.
- */
 public class SysInfo {
     public static void main(String[] args) {
         Map<String, String> envMap = System.getenv();
