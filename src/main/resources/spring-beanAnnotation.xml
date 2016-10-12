@@ -7,7 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-
     <!--
         <context:annotation-config> 是用于激活那些已经在spring容器里注册过的bean(无论是通过xml的方式还是通过package scanning的方式)上面的注解,
         是一个注解处理工具。

@@ -2,7 +2,6 @@ package spring;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.junit.After;
 import org.junit.Before;
 import org.springframework.beans.BeansException;
@@ -11,9 +10,6 @@ import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
 
-/**
- * Created by wchb on 15-12-12.
- */
 public class UnitTestBase {
 
     private static final Log LOG = LogFactory.getLog(UnitTestBase.class);

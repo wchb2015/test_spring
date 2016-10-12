@@ -1,16 +1,11 @@
 package spring;
 
-/**
- * Created by wangchongbei on 15-12-14.
- */
-
-import java.io.IOException;
-
 import com.spring.resource.MoocResource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
+import java.io.IOException;
 
 @RunWith(BlockJUnit4ClassRunner.class)
 public class TestResource extends UnitTestBase {

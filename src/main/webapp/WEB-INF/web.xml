@@ -15,7 +15,7 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring-quartz.xml</param-value>
     </context-param>
-    
+
     <servlet>
         <display-name>TestServlet</display-name>
         <servlet-name>TestServlet</servlet-name>
