@@ -10,4 +10,11 @@
           上面配置了default-autowire="byName"（使用spring-autowiring） 就不用再去配置property属性-->
     </bean>
 
+    <bean id="01_SysLogServiceImpl" class="com.lvmama.service.impl.SysLogServiceImpl">
+
+    </bean>
+
+    <bean id="02_SysLogServiceImpl" class="com.lvmama.service.impl.SysLogServiceImpl">
+
+    </bean>
 </beans>
