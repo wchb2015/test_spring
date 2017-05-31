@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class TestServlet extends HttpServlet {
 
+    private static final long serialVersionUID = 7093856751964160168L;
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1. 从 application 域对象中得到 IOC 容器的引用
         ServletContext servletContext = getServletContext();
