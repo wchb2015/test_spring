@@ -4,14 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>test</groupId>
-    <artifactId>spring</artifactId>
+    <groupId>com.wchb</groupId>
+    <artifactId>test_spring</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>test_spring</name>
-    <packaging>war</packaging>
 
     <properties>
-        <spring.version>4.2.0.RELEASE</spring.version>
+        <spring.version>5.2.2.RELEASE</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
@@ -55,17 +54,6 @@
             <version>4.12</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
-        </dependency>
         <!--common end-->
 
         <!--Spring start-->
@@ -84,12 +72,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
@@ -116,32 +98,8 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.8.7</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jms</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
         <!--Spring end-->
 
-        <dependency>
-            <groupId>org.quartz-scheduler</groupId>
-            <artifactId>quartz</artifactId>
-            <version>2.1.7</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-core</artifactId>
-            <version>5.7.0</version>
-        </dependency>
 
     </dependencies>
 
@@ -150,13 +108,7 @@
     <build>
         <resources>
             <resource>
-                <!--directory: 资源所在的位置-->
                 <directory>src/main/resources</directory>
-                <!--filtering: 是否替换资源中的属性placehold-->
-                <filtering>true</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/conf</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>
