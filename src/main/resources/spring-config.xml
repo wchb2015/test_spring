@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
+       default-autowire="byName"
+>
+
+    <bean id="user" class="com.wchb.test.spring.model.User">
+        <property name="name" value="BMW"/>
+        <property name="id" value="1000"/>
+    </bean>
+
+    <bean id="car" class="com.wchb.test.spring.model.Car">
+        <property name="brand" value="BMW"/>
+        <property name="price" value="1000"/>
+    </bean>
+
+    <context:component-scan base-package="com.wchb.test.spring.service"/>
+
+</beans>
