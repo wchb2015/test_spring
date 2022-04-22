@@ -10,7 +10,7 @@
     <name>test_spring</name>
 
     <properties>
-        <spring.version>5.2.2.RELEASE</spring.version>
+        <spring.version>5.3.19</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
